@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Select Best Three - Core Javascript Project with Tailwind css</title>
+
+        <!-- google fonts link -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- tailwind css -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body>
+        <!-- banner section start -->
+        <section id="banner">
+            <div class="container mx-auto">
+                <h1 class="text-6xl font-bold text-orange-500 text-center">Select Your Best Three</h1>
+                <img src="images/shapes.png" alt="shapes" class="w-40 mx-auto" />
+                <p class="text-center px-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br />
+                    Velit officia consequat duis enim velit mollit. <br />
+                    Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
+        </section>
+        <!-- banner section end -->
+
+        <!-- main section start -->
+        <section id="main" class="bg-slate-900 py-20">
+            <div class="container mx-auto sm:grid xl:grid-cols-4 sm:grid-cols-2 gap-3">
+                <!-- players section start -->
+                <div class="players col-span-3 grid md:grid-cols-3 sm:grid-cols-2 gap-4">
+                    <!-- player items -->
+                    <div class="player_items border-solid border-2 border-gray-600">
+                        <div class="player_image overflow-hidden">
+                            <img src="images/image-1.jpg" alt="lionel Messi" />
+                        </div>
+                        <div class="items_body p-5">
+                            <h3 id="player_name" class="text-3xl font-bold text-white text-center">Lionel Messi</h3>
+                            <ul class="list-none flex justify-center gap-2">
+                                <li class="text-gray-500">35 Goals</li>
+                                <li class="text-orange-600 px-2">|</li>
+                                <li class="text-gray-500">120 Assist</li>
+                            </ul>
+                            <button id="select" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white" value="Lionel Messi">Select</button>
+                        </div>
+                    </div>
+
+                    <!-- player items -->
+                    <div class="player_items border-solid border-2 border-gray-600">
+                        <div class="player_image overflow-hidden">
+                            <img src="images/image-2.jpg" alt="lionel Messi" />
+                        </div>
+                        <div class="items_body p-5">
+                            <h3 id="player_name" class="text-3xl font-bold text-white text-center">Naimar</h3>
+                            <ul class="list-none flex justify-center gap-2">
+                                <li class="text-gray-500">35 Goals</li>
+                                <li class="text-orange-600 px-2">|</li>
+                                <li class="text-gray-500">120 Assist</li>
+                            </ul>
+                            <button id="select" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white" value="Naimar">Select</button>
+                        </div>
+                    </div>
+
+                    <!-- player items -->
+                    <div class="player_items border-solid border-2 border-gray-600">
+                        <div class="player_image overflow-hidden">
+                            <img src="images/image-3.jpg" alt="lionel Messi" />
+                        </div>
+                        <div class="items_body p-5">
+                            <h3 id="player_name" class="text-3xl font-bold text-white text-center">Cristiano Ronaldo</h3>
+                            <ul class="list-none flex justify-center gap-2">
+                                <li class="text-gray-500">35 Goals</li>
+                                <li class="text-orange-600 px-2">|</li>
+                                <li class="text-gray-500">120 Assist</li>
+                            </ul>
+                            <button id="select" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white" value="Cristiano Ronaldo">Select</button>
+                        </div>
+                    </div>
+
+                    <!-- player items -->
+                    <div class="player_items border-solid border-2 border-gray-600">
+                        <div class="player_image overflow-hidden">
+                            <img src="images/image-4.jpg" alt="lionel Messi" />
+                        </div>
+                        <div class="items_body p-5">
+                            <h3 id="player_name" class="text-3xl font-bold text-white text-center">Zlatan Ibrahimovic</h3>
+                            <ul class="list-none flex justify-center py-5 gap-2">
+                                <li class="text-gray-500">35 Goals</li>
+                                <li class="text-orange-600 px-2">|</li>
+                                <li class="text-gray-500">120 Assist</li>
+                            </ul>
+                            <button id="select" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white">Select</button>
+                        </div>
+                    </div>
+
+                    <!-- player items -->
+                    <div class="player_items border-solid border-2 border-gray-600">
+                        <div class="player_image overflow-hidden">
+                            <img src="images/image-5.jpg" alt="lionel Messi" />
+                        </div>
+                        <div class="items_body p-5">
+                            <h3 id="player_name" class="text-3xl font-bold text-white text-center">Joe Hart</h3>
+                            <ul class="list-none flex justify-center py-5 gap-2">
+                                <li class="text-gray-500">16 Goals</li>
+                                <li class="text-orange-600 px-2">|</li>
+                                <li class="text-gray-500">120 Assist</li>
+                            </ul>
+                            <button id="select" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white">Select</button>
+                        </div>
+                    </div>
+
+                    <!-- player items -->
+                    <div class="player_items border-solid border-2 border-gray-600">
+                        <div class="player_image overflow-hidden">
+                            <img src="images/image-6.jpg" alt="lionel Messi" />
+                        </div>
+                        <div class="items_body p-5">
+                            <h3 id="player_name" class="text-3xl font-bold text-white text-center">Xavi</h3>
+                            <ul class="list-none flex justify-center py-5 gap-2">
+                                <li class="text-gray-500">25 Goals</li>
+                                <li class="text-orange-600 px-2">|</li>
+                                <li class="text-gray-500">12 Assist</li>
+                            </ul>
+                            <button id="select" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- players section end -->
+
+                <!-- sidebar section start -->
+                <div class="sidesbar col-span-1">
+                    <!-- selected_3 section -->
+                    <div class="Selected_3 bg-black p-10">
+                        <h3 class="text-3xl font-bold text-white text-center">Selected-3</h3>
+                        <img src="images/shapes-line.png" alt="shape line" class="w-40 mx-auto mb-7" />
+                        <ul id="selected_palyer" class="pl-3">
+                            <li class="text-gray-400 text-xl py-2">1. <span class="text-white">Naimar</span></li>
+                            <li class="text-gray-400 text-xl py-2">2. <span class="text-white">Xavi</span></li>
+                            <li class="text-gray-400 text-xl py-2">3. <span class="text-white">Joe Hart</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- budget section -->
+                    <div class="budget bg-black p-10 mt-5">
+                        <h3 class="text-3xl font-bold text-white text-center">Budget</h3>
+                        <img src="images/shapes-line.png" alt="shape line" class="w-40 mx-auto mb-7" />
+
+                        <!-- input_items section -->
+                        <div class="input_items text-xl">
+                            <div class="input flex justify-between">
+                                <label for="per_player" class="text-gray-400">Per Player</label>
+                                <!-- per_player input -->
+                                <input id="per_player" type="text" class="bg-transparent border-solid border-2 border-white py-2 px-3 ml-2 w-36" />
+                            </div>
+                            <button id="budget-calculate" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white">Calculate</button>
+                            <ul class="flex justify-between">
+                                <li class="text-gray-400">Player Expenses</li>
+                                <li class="text-white">$<span>5000</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- input_items section -->
+                        <div class="input_items mt-10">
+                            <div class="input flex justify-between">
+                                <label for="manager" class="text-gray-400">Manager</label>
+                                <!-- manager input -->
+                                <input id="manager" type="text" class="bg-transparent border-solid border-2 border-white inline py-2 px-3 ml-2 w-36" />
+                            </div>
+                            <div class="input flex justify-between mt-5">
+                                <label for="coach" class="text-gray-400">Coach</label>
+                                <!-- coach -->
+                                <input id="coach" type="text" class="bg-transparent border-solid border-2 border-white py-2 px-3 ml-2 w-36" />
+                            </div>
+                            <button id="budget-calculate" class="w-full px-5 py-2 my-3 uppercase bg-blue-950 hover:bg-blue-500 text-white">Calculate</button>
+                            <ul class="flex justify-between">
+                                <li class="text-gray-400">Total</li>
+                                <li class="text-orange-500">$<span>5000</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar section end -->
+            </div>
+        </section>
+        <!-- main section end -->
+
+        <!-- js script -->
+        <script src="js/tailwind.config.js"></script>
+        <script src="js/select-three.js"></script>
+    </body>
+</html>
