@@ -1,19 +1,19 @@
 # Select best five football player and get total expences with manager and coach expences amount.
 # Its function made with html5, css3, tailwind css and core javascript
-<img src="[https://i.ibb.co/85GmMvs/Screenshot-2023-05-29-at-13-08-41-Select-Best-Five-Core-Javascript-Project-with-Tailwind-css.png)](https://i.ibb.co/85GmMvs/Screenshot-2023-05-29-at-13-08-41-Select-Best-Five-Core-Javascript-Project-with-Tailwind-css.png)" alt="Select-Best-Five-Core-Javascript-Project-with-Tailwind-css" width="50%" />
+<img src="https://i.ibb.co/85GmMvs/Screenshot-2023-05-29-at-13-08-41-Select-Best-Five-Core-Javascript-Project-with-Tailwind-css.png" alt="Select-Best-Five-Core-Javascript-Project-with-Tailwind-css" width="50%" />
 
 ## Features:
-    ✔ Any 5 players can be selected from many players.
-    ✔ 5 players that have been selected cannot be re-selected.
-    ✔ After selecting a player, that player's select button will be disabled and active in a different color.
-    ✔ If there are more than 5 players, a warning will be given.
-    ✔ Total Player Expense can be calculated by adding your budget amount to the number of players selected.
-    ✔ Managers and coaches can calculate total expenses by adding the player's total expenses to their budget amount.
-    ✔ If the player is not selected and the per player amount is calculated then a warning will be given to select the player.
-    ✔ If the amount is calculated without giving any field then warning will be given to add the amount.
-    ✔ Added a reset button so you can restart the total expense calculation from the beginning.
-    ✔ Here every line is commented where what code is done and why.
-    ✔ It uses full core JavaScript.
+    ✅ Any 5 players can be selected from many players.
+    ✅ 5 players that have been selected cannot be re-selected.
+    ✅ After selecting a player, that player's select button will be disabled and active in a different color.
+    ✅ If there are more than 5 players, a warning will be given.
+    ✅ Total Player Expense can be calculated by adding your budget amount to the number of players selected.
+    ✅ Managers and coaches can calculate total expenses by adding the player's total expenses to their budget amount.
+    ✅ If the player is not selected and the per player amount is calculated then a warning will be given to select the player.
+    ✅ If the amount is calculated without giving any field then warning will be given to add the amount.
+    ✅ Added a reset button so you can restart the total expense calculation from the beginning.
+    ✅ Here every line is commented where what code is done and why.
+    ✅ It uses full core JavaScript.
 
 ## ### Touch Friendly :
     ✅ Easy browsing on touch devices.
