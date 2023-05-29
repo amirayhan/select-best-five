@@ -1,4 +1,5 @@
-## Select best five football player and get total expences with manager and coach expences amount.
+## Select best five football player Html TailWind Css and core Javascript Project
+### Get total expences with manager and coach expences amount.
 ### Its function made with html5, css3, tailwind css and core javascript
 <img src="https://i.ibb.co/85GmMvs/Screenshot-2023-05-29-at-13-08-41-Select-Best-Five-Core-Javascript-Project-with-Tailwind-css.png" alt="Select-Best-Five-Core-Javascript-Project-with-Tailwind-css" width="50%" />
 
