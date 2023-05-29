@@ -39,3 +39,25 @@ function getNotification(notificationText) {
         notification.style.display = "none";
     });
 }
+
+// reset all field and display
+document.getElementById("reset").addEventListener("click", function () {
+    // clear player list you can use it
+    // get player list
+    // const playerList = getElement("selected_palyer");
+    // get total player length
+    // const totalPlayers = playerList.getElementsByTagName("li");
+    // while (totalPlayers.length > 0) {
+    //     playerList.removeChild(totalPlayers[0]);
+    // }
+
+    // reload full page to reset
+    location.reload();
+
+    // get all field and display ammount and clear all
+    document.getElementById("per_player").value = "";
+    document.getElementById("player_expence_display").innerText = "0";
+    document.getElementById("manager").value = "";
+    document.getElementById("coach").value = "";
+    document.getElementById("total_expences_display").innerText = "0";
+});
