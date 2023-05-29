@@ -6,19 +6,24 @@ document.getElementById("budget-calculate").addEventListener("click", function (
     // get total player length
     const totalPlayers = playerList.getElementsByTagName("li").length;
 
-    // get per player ammount
-    const perPlayerAmmount = inputAmmount("per_player");
-    if (isNaN(perPlayerAmmount) === false) {
-        // get total player expences ammount
-        const totalPlayerExpences = perPlayerAmmount * totalPlayers;
-
-        // get player expence display
-        const playerExpenceDisplay = getElement("player_expence_display");
-
-        // add total player expences ammount in player expence display
-        playerExpenceDisplay.innerText = totalPlayerExpences;
+    // when player list is empty, show this notification
+    if (totalPlayers === 0) {
+        getNotification("Please select any player first.");
     } else {
-        getNotification("Please Enter Numbers In The Input Field");
+        // get per player ammount
+        const perPlayerAmmount = inputAmmount("per_player");
+        if (isNaN(perPlayerAmmount) === false) {
+            // get total player expences ammount
+            const totalPlayerExpences = perPlayerAmmount * totalPlayers;
+
+            // get player expence display
+            const playerExpenceDisplay = getElement("player_expence_display");
+
+            // add total player expences ammount in player expence display
+            playerExpenceDisplay.innerText = totalPlayerExpences;
+        } else {
+            getNotification("Please enter amount in the input field");
+        }
     }
 });
 
@@ -33,25 +38,38 @@ document.getElementById("total-calculate").addEventListener("click", function ()
     // get coach expence ammount
     const coachAmmount = inputAmmount("coach");
 
-    if (isNaN(perPlayerAmmount) === false) {
-        // get total player expences ammount
-        const totalPlayerExpences = perPlayerAmmount * totalPlayers;
+    if (isNaN(managerAmmount) === false && isNaN(coachAmmount) === false) {
+        // finally get total expences ammount
+        const totalExpences = totalPlayerExpences + managerAmmount + coachAmmount;
 
-        // get player expence display
-        const playerExpenceDisplay = getElement("player_expence_display");
+        // get total expences display
+        const TotalExpencesDisplay = getElement("total_expences_display");
 
-        // add total player expences ammount in player expence display
-        playerExpenceDisplay.innerText = totalPlayerExpences;
+        // add total expences ammount in total expences display
+        TotalExpencesDisplay.innerText = totalExpences;
     } else {
-        getNotification("Please Enter Numbers In The Input Field");
+        getNotification("Please enter amount in the input field");
     }
+});
 
-    // finally get total expences ammount
-    const totalExpences = totalPlayerExpences + managerAmmount + coachAmmount;
+// reset all field and display
+document.getElementById("reset").addEventListener("click", function () {
+    // clear player list you can use it
+    // get player list
+    // const playerList = getElement("selected_palyer");
+    // get total player length
+    // const totalPlayers = playerList.getElementsByTagName("li");
+    // while (totalPlayers.length > 0) {
+    //     playerList.removeChild(totalPlayers[0]);
+    // }
 
-    // get total expences display
-    const TotalExpencesDisplay = getElement("total_expences_display");
+    // reload full page to reset
+    location.reload();
 
-    // add total expences ammount in total expences display
-    TotalExpencesDisplay.innerText = totalExpences;
+    // get all field and display ammount and clear all
+    document.getElementById("per_player").value = "";
+    document.getElementById("player_expence_display").innerText = "0";
+    document.getElementById("manager").value = "";
+    document.getElementById("coach").value = "";
+    document.getElementById("total_expences_display").innerText = "0";
 });
